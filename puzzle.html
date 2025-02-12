@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Puzzle Quest</title>
+  <link rel="stylesheet" href="css/puzzle.css">
+</head>
+<body>
+  <!-- Start Instructions Popup -->
+  <div id="start-popup" class="popup">
+    <div class="popup-content">
+      <h2>Welcome to Love Puzzle Quest! 💕</h2>
+      <p>Here’s how to play:</p>
+      <ul style="text-align: left; margin: 10px auto; max-width: 250px;">
+        <li>Drag and drop the scrambled letters into the correct order.</li>
+        <li>Solve the puzzle to unlock a sweet surprise!</li>
+        <li>If you get stuck, don’t worry—you can always try again.</li>
+      </ul>
+      <button id="close-start-popup">Let’s Play 🎉</button>
+    </div>
+  </div>
+
+  <!-- Updated Game Instructions -->
+  <div id="game-instructions" style="display: none;">
+    <h2 style="margin: 0;">Love is in the Air, My Baby Boo!</h2>
+    <p style="margin-top: 10px;" id="instructions-text">💕  
+      Oh no! Our sweet love message got all jumbled up, just like my heart when I see you! 💌✨  
+      Gently pick up the love-filled letters and place them in the perfect order, my little cheesecake! 🍰💖  
+      Arrange them just right, and you'll unlock a heart-melting surprise! 🎀💫  
+      Have fun, snugglebug!
+    </p>
+  </div>
+
+  <!-- Level Indicator -->
+  <div id="level-indicator" style="margin-bottom: 10px; font-size: 1.2rem; color: white;">
+    Level <span id="current-level">1</span>
+  </div>
+
+  <!-- Puzzle Container -->
+  <div id="puzzle-container">
+    <div id="letters"></div>
+    <div id="drop-zones"></div>
+    <!-- Dynamic Button Below Puzzle Drop Boxes -->
+    <button id="dynamic-button">Skip to Next Level ⏭️</button>
+  </div>
+
+  <!-- Popup Card for All Levels -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Congratulations, Sweetie! 🎉</h2>
+      <p id="popup-message">You solved the puzzle! You’re my cheesecake forever! 🍰💖</p>
+      <button id="next-level">Next Level ➡️</button>
+    </div>
+  </div>
+
+  <!-- Level 4 Completion Popup -->
+  <div id="level-4-popup" class="popup">
+    <div class="popup-content">
+      <h2>Congratulations! 🎉</h2>
+      <p>Below is the message reveal button.</p>
+      <button id="close-level-4-popup">OK ✨</button>
+    </div>
+  </div>
+
+  <!-- Love Letter Popup -->
+  <div id="love-letter-popup" class="popup">
+    <div class="popup-content">
+      <h2>A Special Message for You ❤️</h2>
+      <p id="love-letter-text">
+        My dearest love,<br>
+        From the moment I met you, my world transformed into something magical—you are the light in my darkest days, the warmth in my coldest nights, and the reason behind my happiest smiles; every word you speak feels like poetry, and every glance from your eyes makes my heart skip a beat; I hope you know how much you mean to me, as you are my everything—my partner, my confidant, my best friend, and my greatest love; thank you for being you.<br>
+        With all my heart,<br>
+        Forever yours. 💖
+      </p>
+      <button id="close-love-letter">Close ✨</button>
+    </div>
+  </div>
+
+  <script src="js/puzzle.js"></script>
+</body>
+</html>
